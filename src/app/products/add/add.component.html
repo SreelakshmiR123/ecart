@@ -1,0 +1,49 @@
+<h1 class="text-center" style="color: rgb(230, 57, 164);">Add New Product</h1>
+<form (ngSubmit)="addNewProduct()"  [formGroup]="addFormModel" class="w-25 mt-5 container text-center">
+    <input formControlName ="id" type="text" class="form-control mt-2" id="p1" placeholder="product id" name="pn1">
+    <div *ngIf="this.addFormModel.get('id')?.errors&&this.addFormModel.get('id')?.touched">
+        <p class="text-danger">invalid id</p>
+    </div>
+    <input formControlName="productName" type="text" class="form-control mt-2" id="p1" placeholder="product name " name="pn2">
+    <div *ngIf="this.addFormModel.get('productName')?.errors&&this.addFormModel.get('productName')?.touched">
+        <p class="text-danger">invalid productName</p>
+    </div>
+    <input formControlName="categoryId"   type="text" class="form-control mt-2" id="p1" placeholder="category id" name="pn3">
+    <div *ngIf="this.addFormModel.get('categoryId')?.errors&&this.addFormModel.get('categoryId')?.touched">
+        <p class="text-danger">invalid categoryId</p>
+    </div>
+    <input formControlName="description"  type="text" class="form-control mt-2" id="p1" placeholder="description" name="pn4">
+    <div *ngIf="this.addFormModel.get('description')?.errors&&this.addFormModel.get('description')?.touched">
+        <p class="text-danger">invalid description</p>
+    </div>
+    <input formControlName="price"   type="text" class="form-control mt-2" id="p1" placeholder="price" name="pn5">
+    <div *ngIf="this.addFormModel.get('price')?.errors&&this.addFormModel.get('price')?.touched">
+        <p class="text-danger">invalid price </p>
+    </div>
+    <input formControlName="is_available"  type="text" class="form-control mt-2" id="p1" placeholder="is_available" name="pn6">
+    <div *ngIf="this.addFormModel.get('is_available')?.errors&&this.addFormModel.get('is_available')?.touched">
+        <p class="text-danger">invalid is_available</p>
+    </div>
+    <input formControlName="productImg"  type="text" class="form-control mt-2" id="p1" placeholder="productImg" name="pn7">
+    <div *ngIf="this.addFormModel.get('productImg')?.errors&&this.addFormModel.get('productImg')?.touched">
+        <p class="text-danger">invalid productImg </p>
+    </div>
+    <input formControlName="rating"  type="text" class="form-control mt-2" id="p1" placeholder="rating" name="pn8">
+    <div *ngIf="this.addFormModel.get('rating')?.errors&&this.addFormModel.get('rating')?.touched">
+        <p class="text-danger">invalid rating </p>
+    </div>
+    <input formControlName="review"  type="text" class="form-control mt-2" id="p1" placeholder="review" name="pn9">
+    <div *ngIf="this.addFormModel.get('review')?.errors&&this.addFormModel.get('review')?.touched">
+        <p class="text-danger">invalid review</p>
+    </div>
+    <input formControlName="vendor_name"  type="text" class="form-control mt-2" id="p1" placeholder="vendor_name" name="pn10">
+    <div *ngIf="this.addFormModel.get('vendor_name')?.errors&&this.addFormModel.get('vendor_name')?.touched">
+        <p class="text-danger">invalid vendor_name</p>
+    </div>
+    <input formControlName="warrenty"  type="text" class="form-control mt-2" id="p1" placeholder="warrenty" name="pn11">
+    <div *ngIf="this.addFormModel.get('warrenty')?.errors&&this.addFormModel.get('warrenty')?.touched">
+        <p class="text-danger">invalid warrenty </p>
+    </div>
+    <button style="background-color: rgb(230, 57, 164); color: white;" type="submit"
+        class="btn btn-outline-dark mt-3 mb-4">Add Product</button>
+</form>

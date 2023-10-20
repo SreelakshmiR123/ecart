@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a style="color: rgb(67, 169, 206); font-family: 'palette Mosaic',serif;"class="navbar-brand" href=""><h1>shoppy<span style="font-family: 'palette Mosaic',cursive; color: rgb(236,75, 169);">Cart</span></h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                
+                
+                <li class="nav-item"><a class="nav-link ms-5"aria-current="page" href="products/add-product">Add Product</a></li>
+                    <li class="nav-item">
+                        <input [(ngModel)]="searchData" (keyup)="accessData($event)"  type="text" placeholder="search product" class="form-control ms-5">
+                    </li>
+                
+                   
+                
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>

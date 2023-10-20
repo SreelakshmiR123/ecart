@@ -1,0 +1,33 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                <img style="width: 250px;" class="card-img-top mb-5 mb-md-0" src={{pdata.productImg}} alt="..." />
+            </div>
+            <div class="col-md-6">
+                <div class="small mb-1">{{pdata.vendor_name}}</div>
+                <h1 class="display-5 fw-bolder">{{pdata.productName}}</h1>
+                <div class="fs-5 mb-5 d-flex flex-column">
+                    <span class="text-decoration-line-through">Rs{{pdata.price +500}}</span>
+                    <span>Rs{{pdata.price}}</span>
+                </div>
+                <p class="lead">{{pdata.description}}</p>
+                <div class="d-flex">
+                    <button style="background-color: rgb(233, 41, 156);" class="btn btn-outline-light w-25 p-2"><a
+                            style="text-decoration: none; color: white;"
+                            href="products/edit-product/{{pdata.id}}">Edit</a></button>
+
+
+                    <button (click)="deleteProduct()" style="background-color: rgb(233, 41, 156);" class="btn btn-outline-light w-25  ms-3 p-2"><a
+                            style="text-decoration: none; color: white;"
+                            >Delete</a></button>
+
+                            <button   style="background-color: rgb(233, 41, 156);" class="btn btn-outline-light w-25  ms-3 p-2"><a
+                                style="text-decoration: none; color: white;"
+                                href="products/view-product/{{pdata.id + 1}}">Next</a></button>
+                                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

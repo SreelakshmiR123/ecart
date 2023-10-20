@@ -1,0 +1,7 @@
+e-commerce
+---------------
+
+
+lazy loading-- To control traffic pages in easy way.. eg:home page 
+
+lazy loaded module- All components inside this module are lazy loaded components

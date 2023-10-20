@@ -1,0 +1,37 @@
+<h1 class="text-center" style="color: rgb(230, 57, 164);">EditProduct</h1>
+<form  (ngSubmit)="update()"  class="w-25 mt-5 container text-center">
+    <input [(ngModel)]="pdata.productId" formControlName="id" type="text" class="form-control mt-2" id="p1"
+        placeholder="product id" name="pn1">
+
+    <input [(ngModel)]="pdata.productName" type="text" class="form-control mt-2" id="p1" placeholder="product name "
+        name="pn2">
+
+    <input [(ngModel)]="pdata.categoryId" type="text" class="form-control mt-2" id="p1" placeholder="category id"
+        name="pn3">
+
+    <input [(ngModel)]="pdata.description" type="text" class="form-control mt-2" id="p1" placeholder="description"
+        name="pn4">
+
+    <input [(ngModel)]="pdata.price" type="text" class="form-control mt-2" id="p1" placeholder="price" name="pn5">
+
+    <input [(ngModel)]="pdata.is_available" type="text" class="form-control mt-2" id="p1" placeholder="is_available"
+        name="pn6">
+
+    <input [(ngModel)]="pdata.productImg" type="text" class="form-control mt-2" id="p1" placeholder="productImg"
+        name="pn7">
+
+    <input [(ngModel)]="pdata.rating" type="text" class="form-control mt-2" id="p1" placeholder="rating"
+        name="pn8">
+
+    <input [(ngModel)]="pdata.review" type="text" class="form-control mt-2" id="p1" placeholder="review"
+        name="pn9">
+
+    <input [(ngModel)]="pdata.vendor_name" type="text" class="form-control mt-2" id="p1" placeholder="vendor_name"
+        name="pn10">
+
+    <input [(ngModel)]="pdata.warrenty" type="text" class="form-control mt-2" id="p1" placeholder="warrenty"
+        name="pn11">
+
+    <button style="background-color: rgb(230, 57, 164); color: white;" type="submit"
+        class="btn btn-outline-dark mt-3 mb-4">Update</button>
+</form>

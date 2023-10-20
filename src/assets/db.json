@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "shirt",
+      "categoryId": 2,
+      "description": "men's casual half sleeves",
+      "price": "1500",
+      "productImg": "https://m.media-amazon.com/images/I/61OQvfyyp4L._AC_UY1100_.jpg",
+      "rating": 4.5,
+      "review": 150,
+      "warrenty": 1,
+      "vendor_name": "malabar textiles",
+      "is_available": "true"
+    },
+    {
+      "id": 2,
+      "productName": " men's shirt",
+      "categoryId": 2,
+      "description": "latest men'shirt",
+      "price": 1800,
+      "productImg": "https://assets.ajio.com/medias/sys_master/root/20230624/5UNz/64962d29eebac147fcea3c44/-473Wx593H-465141046-white-MODEL.jpg ",
+      "rating": 4.2,
+      "review": 100,
+      "warrenty": 1,
+      "vendor_name": "chennai textiles",
+      "is_available": "false"
+    },
+    {
+      "id": 3,
+      "productName": " women's shorts",
+      "categoryId": 2,
+      "description": "latest women'shorts",
+      "price": 860,
+      "productImg": "https://assets.ajio.com/medias/sys_master/root/20230621/nYuW/649271dc42f9e729d7659dfb/-288Wx360H-463689017-khaki-MODEL.jpg",
+      "rating": 4,
+      "review": 45,
+      "warrenty": 1,
+      "vendor_name": "mumbai textiles",
+      "is_available": "true"
+    },
+    {
+      "id": 4,
+      "productName": "Earring",
+      "categoryId": 3,
+      "description": "leaf shaped hanging earring",
+      "price": 133300,
+      "productImg": " //mychungath.com/cdn/shop/files/12_dad1abaf-80e9-48dd-a25b-715cd6b6011a_320x.webp?v=1696325412",
+      "rating": 4.5,
+      "review": 17,
+      "warrenty": 1,
+      "vendor_name": "chettinad ornaments",
+      "is_available": "false"
+    },
+    {
+      "id": 5,
+      "productName": "Laptop",
+      "categoryId": "1",
+      "description": "HP Pavilion 14, AMD Ryzen 5-5625U 8GB RAM/512GB",
+      "price": "52938",
+      "productImg": "https://m.media-amazon.com/images/I/71-JpBECEGL._SL1500_.jpg",
+      "rating": "4.2",
+      "review": "27",
+      "warrenty": "1",
+      "vendor_name": "my-G",
+      "is_available": "true"
+    },
+    {
+      "id": 15,
+      "productName": "ring",
+      "categoryId": "3",
+      "description": "women gold ring",
+      "price": "100000",
+      "productImg": "https://i.postimg.cc/wxf0Fnrn/ring1.jpg",
+      "rating": "4.5",
+      "review": "189",
+      "warrenty": "1",
+      "vendor_name": "tamil gold",
+      "is_available": "true"
+    },
+    {
+      "id": "9",
+      "productName": "electronics",
+      "categoryId": "1",
+      "description": "Samsung 49Inch CHG90 144Hz Curved Gaming Monitor ",
+      "price": "1000",
+      "productImg": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "rating": "3",
+      "review": "12",
+      "warrenty": "1",
+      "vendor_name": "samsung",
+      "is_available": "true"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<header class="mt-0">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img id="ci" src="https://img.freepik.com/free-photo/full-length-portrait-cheerful-family_171337-2283.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img id="ci"
+          src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img id="ci"
+          src="https://img.freepik.com/free-photo/family-mall_1098-15029.jpg?size=626&ext=jpg&ga=GA1.1.261527159.1690524602&semt=ais"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Shop in style</h1>
+            <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+        </div>
+    </div> -->
+</header>
+
+
+<!-- Section-->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center mt-2 p-3">
+      <div (click)="categoryProduct('')" class="col-3" style="cursor: pointer;height:100px; width:22%; background-color:aquamarine;">
+        <h1>All Items</h1>
+      </div>
+
+      <div (click)="categoryProduct(2)" class="col-3" style="cursor: pointer;height:100px; width:22%; background-color:antiquewhite;">
+        <h1>Fasion</h1>
+      </div>
+
+      <div (click)="categoryProduct(1)" class="col-3" style="cursor: pointer;height:100px; width:22%; background-color:yellow;">
+        <h1>Electronics</h1>
+      </div>
+
+      <div (click)="categoryProduct(3)" class="col-3" style="cursor: pointer;height:100px; width:22%; background-color:rosybrown;">
+        <h1>Jwellery</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div *ngFor="let i of categoryProducts | search :searchString:'productName'" class="col-md-4 mb-5">
+        <div class="card h-100 align-items-center pt-2">
+          <!-- Product image-->
+          <img style="width: 300px;" class="card-img-top" src={{i.productImg}} alt="..." />
+          <!-- Product details-->-
+          <div class="card-body p-4">
+            <div class="text-center">
+              <!-- Product name-->
+              <h5 class="fw-bolder">{{i.productName}}</h5>
+              <!-- Product price-->
+              {{i.price}} Rs
+            </div>
+          </div>
+          <!-- Product actions-->
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
+                href="products/view-product/{{i.id}}">view</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
