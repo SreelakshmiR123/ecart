@@ -9,33 +9,35 @@ export class DataService {
 
   search = new BehaviorSubject("")
 
-  constructor(private http:HttpClient) { }
-  
+  dbServer = "https://my-json-server.typicode.com/SreelakshmiR123/json-server"
+
+  constructor(private http: HttpClient) { }
+
   //api to access all products from products collection-get
 
-  getAllProducts(){
-    return this.http.get('http://localhost:3000/products')
+  getAllProducts() {
+    return this.http.get(this.dbServer + '/products')
   }
 
   //get single product data
-  getProduct(id:any){
-    return this.http.get('http://localhost:3000/products/'+id)
+  getProduct(id: any) {
+    return this.http.get(this.dbServer + '/products/' + id)
   }
 
   //delete
-  removeProduct(id:any){
-    return this.http.delete('http://localhost:3000/products/'+id)
-    
+  removeProduct(id: any) {
+    return this.http.delete(this.dbServer + '/products/' + id)
+
   }
 
   //add product
-  addProduct(bodyData:any){
-    return this.http.post('http://localhost:3000/products', bodyData)
+  addProduct(bodyData: any) {
+    return this.http.post(this.dbServer + '/products', bodyData)
   }
 
   //edit api
-  updateProduct(id:any,bodyData:any){
-    return this.http.put('http://localhost:3000/products/'+id,bodyData)
+  updateProduct(id: any, bodyData: any) {
+    return this.http.put(this.dbServer + '/products/' + id, bodyData)
   }
 
 }
