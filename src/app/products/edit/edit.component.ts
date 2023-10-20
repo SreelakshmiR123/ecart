@@ -33,7 +33,7 @@ export class EditComponent implements OnInit {
       this.ds.updateProduct(this.pid,this.pdata).subscribe({
         next:(result:any)=>{
           alert("product data updated")
-          this.rout.navigateByUrl('products/view-product/${this.pid}')
+          this.rout.navigateByUrl(`products/view-product/${this.pid}`)
         }
       })
     }
